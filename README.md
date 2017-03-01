@@ -153,9 +153,9 @@
     <h2>这里是一个侧栏，这里是侧栏的标题</h2>
     <h2>侧栏注册窗口标题</h2>
     <form>
-        请输入邮箱地址：<input type="email">
+        请输入邮箱地址：<input type="email" value="这是一个文本输入框" >
         <p>邮箱地址请按要求格式输入</p>
-        请输入密码：<input type="password">请重复输入密码：<input type="password">
+        请输入密码：<input type="password" value="这是一个文本输入框">请重复输入密码：<input type="password" value="这是一个文本输入框">
         <p>密码请为6-16位英文数字</p>
     </form>
 </body>
