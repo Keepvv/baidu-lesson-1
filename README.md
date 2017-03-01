@@ -112,7 +112,7 @@
         <li>排名2</li>
         <li>排名3</li>
     </ol>
-    <table border="1" width="300px">
+    <table border="1">
         <tr>
             <td>表头</td>
             <td>表头</td>
