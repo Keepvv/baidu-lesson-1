@@ -8,33 +8,51 @@
             background-color: gainsboro;
         }
 
-        header{
+        .head{
+            background-color: black;
+
+            position: relative;
+        }
+        .nav{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .list{
+            float: left;
+            font-size: 13px;
+            margin: 6px 10px 10px 10px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .logo{
+            height: 60px;
+            width: 120px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
             background-color: black;
         }
-        header li{
-            float: right;
-            position: absolute;
-            right: 20px;;
-            top: 30px;
-        }
-        header a:link{
-             color: white;
-             text-decoration: none;
-         }
-        footer{
+        .foot{
             text-align: center;
             font-weight: bold;
             line-height: 20px;
         }
-        footer h2{
+        .foot h2{
+            height: 1.8em;
+            line-height: 43px;
+            padding-left: 12px;
             font-weight: normal;
             text-align: left;
+            border-left: 3px solid silver;
         }
         footer p{
             font-size: 0.8em;
             color: gainsboro;
         }
-        div,footer{
+        div{
             margin: 10px;
             border-color: white;
             background-color: white;
@@ -55,27 +73,60 @@
             background-color: black;
             color: white;
             margin: 0px;
+
         }
+        #passage3 dd{
+            width: 120px;
+            height: 126px;
+            margin: 18px 0px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 30px;
+            font-size: 10px;
+        }
+        #passage3 img{
+            height:80px;
+            width:100px;
+            margin:5px auto;
+        }
+        .total-table{
+            border-collapse: collapse;
+            width:100%;
+            font-size: 12px;
+        }
+        .total-table th,td{
+            height: 25px;
+        }
+        .table-head{
+            background-color: black;
+            color: white;
+        }
+        .table-foot{
+            background-color: gray;
+            color: black;
+            font-weight: bold;
+        }
+        #submit {
+            background-color: #3355d0;
+            width: 100%;
+            height: 40px;
+            color: white;
+            border: none;
+            border-radius: 0.7em;
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>网站一级标题</h1>
-        <ul>
-            <li>
-                <a href="#">导航链接一</a>
-            </li>
-            <li>
-                <a href="#">导航链接二</a>
-            </li>
-            <li>
-                <a href="#">导航链接三</a>
-            </li>
-            <li>
-                <a href="#">导航链接四</a>
-            </li>
+    <div class="head">
+        <img class="logo" src="logo.png" alt="baidu">
+        <ul class="nav">
+            <a class="list" href="#"><li>导航链接一</li></a>
+            <a class="list" href="#"><li>导航链接二</li></a>
+            <a class="list" href="#"><li>导航链接三</li></a>
+            <a class="list" href="#"><li>导航链接四</li></a>
         </ul>
-    </header>
+    </div>
     <div id="passage1">
        <h2>文章一级标题</h2>
        <h3>文章二级标题</h3>
@@ -108,62 +159,43 @@
             这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落.
         </p>
         <img src="1.jpeg" alt="picture">
-        <ul>
-            <li>列表项目一</li>
-            <li>列表项目二</li>
-            <li>列表项目三</li>
-        </ul>
+        <dl>
+            <dd>列表项目一</dd>
+            <dd>列表项目二</dd>
+            <dd>列表项目三</dd>
+        </dl>
     </div>
     <div id="passage3">
         <h2>图片</h2>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
-        <p>
-            好看的图片<br>
-            <img src="2.jpg" alt="picture">
-        </p>
+        <dl>
+            <dd>好看的图片<br>
+            <img src="2.jpg" alt="picture"></dd>
+        </dl>
+        <dl>
+            <dd>好看的图片<br>
+                <img src="2.jpg" alt="picture"></dd>
+        </dl>
+        <dl>
+        <dd>好看的图片<br>
+            <img src="2.jpg" alt="picture"></dd>
+        </dl>
+        <dl>
+            <dd>好看的图片<br>
+                <img src="2.jpg" alt="picture"></dd>
+        </dl>
+        <dl>
+            <dd>好看的图片<br>
+                <img src="2.jpg" alt="picture"></dd>
+        </dl>
+        <dl>
+            <dd>好看的图片<br>
+                <img src="2.jpg" alt="picture"></dd>
+        </dl>
+        <dl>
+            <dd>好看的图片<br>
+                <img src="2.jpg" alt="picture"></dd>
+        </dl>
+
     </div>
     <div id="passage4">
         <h2>最后一篇文章的一级标题</h2>
@@ -174,15 +206,13 @@
             <li>排名2</li>
             <li>排名3</li>
         </ol>
-        <table border="1">
-            <header>
-                <tr>
-                    <td>表头</td>
-                    <td>表头</td>
-                    <td>表头</td>
-                </tr>
-            </header>
-            <tr>
+        <table class="total-table" border="1">
+            <tr class="table-head">
+                <td>表头</td>
+                <td>表头</td>
+                <td>表头</td>
+            </tr>
+            <tr >
                 <td>表内单元格</td>
                 <td>表内单元格</td>
                 <td>
@@ -210,13 +240,13 @@
                     <a href="#">操作</a>
                 </td>
             </tr>
-            <tr>
+            <tr class="table-foot">
                 <td>总计</td>
                 <td colspan="2">1000</td>
             </tr>
         </table>
     </div>
-    <footer>
+    <div class="foot">
         <h2>这里是一个侧栏，这里是侧栏的标题</h2>
         <form>
             请输入邮箱地址：<input type="text" placeholder="这是一个文本输入框">
@@ -238,9 +268,9 @@
             <input type="checkbox" name="hobby" value="">科学<br>
             个人描述：
             <textarea name="name" rows="8" cols="80" placeholder="这是一个多行输入框"></textarea><br>
-            <button type="button" name="button">确认提交</button>
+            <button id="submit" type="button" name="button">确认提交</button>
             </form>
-    </footer>
+    </div>
     <p id="foot">版权所有&copy;</p>
 </body>
 </html>
