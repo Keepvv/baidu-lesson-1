@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="text3.css">
+    <title>text3</title>
+    <style>
+      img{
+     height: 80px;
+     width: 80px;
+      }
+      div{
+          padding: 20px;
+          background-color: #eee;
+          border:3px solid gray ;
+
+      .piece2{
+          width: 200px;
+          float: left;
+      }
+
+      .piece4{
+          width: 120px;
+          float: right;
+
+      }
+
+      .picture{
+          padding: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="piece1"> </div>
+    <div class="piece2">
+        <img src="3.jpeg" alt="1">
+        <p>团队名称</p>
+    </div>
+    <div class="piece3">
+        <p>一大段内容</p>
+    </div>
+    <div class="piece4" >
+        <img class="picture" src="3.jpeg" alt="1">
+        <img class="picture" src="3.jpeg" alt="1">
+        <img class="picture" src="3.jpeg" alt="1">
+        <img class="picture" src="3.jpeg" alt="1">
+    </div>
+
+</body>
+</html>
