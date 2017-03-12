@@ -5,29 +5,42 @@
     <title>Title</title>
     <style>
         .wrap{
-    background-color: #fc0;
-    width: 400px;
-    height: 200px;
-    position:absolute;
-    left:0px;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    margin: auto;
-}
-.box{
-    background-color: #ccc;
-    width: 400px;
-    height: 200px;
-    margin: auto;
-}
+            background-color: #ccc;
+            width: 400px;
+            height: 200px;
+            position:relative;
+            position: absolute;
+            left:0px;
+            top:0px;
+            right:0px;
+            bottom:0px;
+            margin: auto;
+        }
+        .box-left{
+            background-color: #fc0;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top:0px;
+            left:0px;
+            border-radius: 0 0 50px 0;
+        }
+        .box-right{
+            background-color: #fc0;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom:0px;
+            right:0px;
+            border-radius: 50px 0 0 0;
+        }
+
     </style>
 </head>
 <body>
 <div class="wrap">
-    <div class="box">
-
-    </div>
+    <div class="box-left"></div>
+    <div class="box-right"></div>
 </div>
 </body>
 </html>
