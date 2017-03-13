@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice</title>
+    <style>
+        /*总体样式*/
+        body{
+            background-color: gainsboro;
+            font-family: "franklin gothic book", century gothic, sans-serif;
+        }
+        /*导航栏样式*/
+        .header {
+            background-color: #383838;
+            height: 60px;
+            width: 100%;
+            margin-left: -8px;
+            margin-top: -8px;
+            padding: 0;
+            position: relative;
+        }
+        #logo img{
+            display: inline;
+            width: 120px;
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        #nav{
+            position: absolute;
+            top: 3px;
+            right: 20px;
+        }
+        #nav li{
+            display: inline;
+            margin-right: 10px;
+        }
+        #nav a:link,a:hover,a:visited{
+            color: #eeeeee;
+            text-decoration: none;
+        }
+
+        /*段落样式*/
+        .body1,.body2,.body3,.body4,.sideBar{
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            width: 63%;
+        }
+
+        .picture1{
+             width: 400px;
+             height: 250px;
+         }
+        /*段落三样式*/
+        .body3 {
+            overflow: auto;
+        }
+        .picture2{
+            border: 1px solid black;
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+        }
+        .picture2 img{
+            height: 65px;
+            width: 80px;
+        }
+        /*侧栏样式*/
+        .sideBar{
+            float: right;
+            width: 25%;
+        }
+        .text-a{
+            width: 80%;
+        }
+        /*底栏样式*/
+         .footer{
+             background-color: black;
+             height: 60px;
+             width: 100%;
+             margin-left: -8px;
+             margin-bottom: -8px;
+             padding: 0;
+         }
+         .footer p{
+             text-align: center;
+             color: white;
+             line-height: 40px;
+         }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div id="logo">
+        <img src="http://p1.bpimg.com/1949/5dc0be59289259aa.png" alt="logo">
+    </div>
+    <ul id="nav">
+        <li>
+            <a href="#">导航链接一</a>
+        </li>
+        <li>
+            <a href="#">导航链接二</a>
+        </li>
+        <li>
+            <a href="#">导航链接三</a>
+        </li>
+        <li>
+            <a href="#">导航链接四</a>
+        </li>
+    </ul>
+</div>
+<div class="sideBar">
+    <h1>这里是侧栏的标题</h1>
+    <form action="">
+        <div class="raw">
+            <label for="y">请输入邮箱地址:</label>
+            <input type="email" id="y"><br>
+            <p>邮箱地址请按要求格式输入</p>
+        </div>
+        <div class="raw">
+            <label for="pass">请输入密码:</label>
+            <input type="password" id="pass"><br>
+            <label for="pass-again">请重复输入密码:</label>
+            <input type="password" id="pass-again"><br>
+            <p>密码为6-16位英文数字</p>
+        </div>
+        <div class="raw">
+            <p>性别:</p>
+            <input type="radio"  id="man" name="sex" value="male" checked>
+            <label for="man">男</label>
+            <input type="radio"  id="woman" name="sex" value="female">
+            <label for="woman">女</label>
+        </div>
+        <div class="raw">
+            <p>city</p>
+            <select name="city" id="city">
+                <option value="bj">北京</option>
+                <option value="sh">上海</option>
+                <option value="hz">杭州</option>
+            </select>
+        </div>
+        <div class="raw">
+            <p>爱好</p>
+            <input id="sport" type="checkbox">
+            <label for="sport">运动</label>
+            <input id="art" type="checkbox">
+            <label for="art">艺术</label>
+            <input id="science" type="checkbox">
+            <label for="science">科学</label>
+        </div>
+        <div class="raw">
+            <p>个人描述</p>
+            <textarea class="text-a" name="profile"  rows="6"></textarea>
+        </div>
+        <div class="raw">
+            <input id="submit" type="submit" value="确认提交">
+        </div>
+    </form>
+</div>
+<div class="body1">
+    <h1>文章一级标题</h1>
+    <h2>文章二级标题</h2>
+    <h3>
+        文章作者&nbsp;&nbsp;<time datetime="">文章发布时间</time>
+    </h3>
+    <p>
+        
+    </p>
+    <img  class="picture1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="picture">
+    <p>
+
+    </p>
+</div>
+<div class="body2">
+    <h1>文章一级标题</h1>
+    <h2>文章二级标题</h2>
+    <h3>
+        文章作者&nbsp;&nbsp;<time datetime="">文章发布时间</time>
+    </h3>
+    <p>
+
+    </p>
+    <img  class="picture1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="picture">
+    <ul>
+        <li>列表项目一</li>
+        <li>列表项目二</li>
+        <li>列表项目三</li>
+    </ul>
+</div>
+<div class="body3">
+    <h1>图片</h1>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+    <div class="picture2">
+        <p>好看的图片</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489337826069&di=7be77edb33a605508d8cdc88959d3f33&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0905%2Fyunyun%2F6%2F118-1-1440x900.jpg" alt="">
+    </div>
+</div>
+<div class="body4">
+    <h1>最后一篇文章的一级标题</h1>
+    <h2>最后一篇文章的二级标题</h2>
+    <h3>
+        文章作者&nbsp;&nbsp;<time datetime="">文章发布时间</time>
+    </h3>
+    <ol>
+        <li>排名1</li>
+        <li>排名2</li>
+        <li>排名3</li>
+    </ol>
+    <p>下面是一个表格</p>
+    <table class="tab" border="1">
+        <tr id="head-t">
+            <td>表头</td>
+            <td>表头</td>
+            <td>表头</td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td>
+                <a href="#">操作</a>
+            </td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td>
+                <a href="#">操作</a>
+            </td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td>
+                <a href="#">操作</a>
+            </td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td>
+                <a href="#">操作</a>
+            </td>
+        </tr>
+        <tr id="foot-t">
+            <td>总计</td>
+            <td colspan="2">1000</td>
+        </tr>
+    </table>
+</div>
+<div class="footer">
+    <p>版权所有&copy</p>
+</div>
+</body>
+</html>
