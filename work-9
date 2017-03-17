@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="text9.css">
+  <title>Title</title>
+</head>
+<body>
+<header id="header">
+  <img src="../img/111.png" alt="">
+  <form id="search" action="">
+    <input type="text">
+  </form>
+  <form id="log" action="">
+    <input type="button" value="登陆">
+  </form>
+</header>
+<nav id="nav">
+  
+
+</nav>
+</body>
+</html>
