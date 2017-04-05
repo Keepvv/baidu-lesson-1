@@ -31,18 +31,23 @@
      将空气质量指数大于60的城市显示到aqi-list的列表中
      */
     var myList = document.getElementById("aqi-list") ;
-    var myArr = new Array(["一","二","三","四","五","六","七","八","九"]) ;
-    for(var i=0 ; i<aqiData.length ; i++){
-      if (aqiData[i][2]>60){
-        var p = myArr[i] ;
-        var g = aqiData[i] ;
-        var myLi = document.createElement("li") ;
-        var myTxt = document.createTextNode("第"+p+"名：") ;
-        var myTxt2 = document.createTextNode(g) ;
-        myLi.appendChild(myTxt) ;
-        myLi.appendChild(myTxt2);
-        myList.appendChild(myLi) ;
+    var newList = [] ;
+    var myArr = new Array(["一"],["二"],["三"],["四"],["五"],["六"],["七"],["八"],["九"]) ;
+    for(var i=0 ; i<aqiData.length ; i++) {
+      if (aqiData[i][1] > 60) {
+        newList.push(aqiData[i]) ;
       }
+    }
+    for(var j=0 ; j<newList.length ; j++) {
+      var p = myArr[j];
+      var g = aqiData[j];
+      var myLi = document.createElement("li");
+      var myTxt = document.createTextNode("第" + p + "名：");
+      var myTxt2 = document.createTextNode(g);
+      myLi.appendChild(myTxt);
+      myLi.appendChild(myTxt2);
+      myList.appendChild(myLi);
+
     }
 
   }
