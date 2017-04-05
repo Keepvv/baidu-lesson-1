@@ -37,10 +37,13 @@
       if (aqiData[i][1] > 60) {
         newList.push(aqiData[i]) ;
       }
+      newList.sort(function (a,b) {
+        return b[1]-a[1];
+      });
     }
     for(var j=0 ; j<newList.length ; j++) {
       var p = myArr[j];
-      var g = aqiData[j];
+      var g = newList[j];
       var myLi = document.createElement("li");
       var myTxt = document.createTextNode("第" + p + "名：");
       var myTxt2 = document.createTextNode(g);
@@ -49,7 +52,6 @@
       myList.appendChild(myLi);
 
     }
-
   }
 
 </script>
